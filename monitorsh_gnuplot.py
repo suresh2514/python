@@ -4,6 +4,7 @@ import sys
 import os
 from collections import defaultdict
 
+# syntax/ man page
 
 
 if len(sys.argv) != 2:
