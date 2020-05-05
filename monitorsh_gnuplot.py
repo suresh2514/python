@@ -4,22 +4,18 @@ import sys
 import os
 from collections import defaultdict
 
-
-
 if len(sys.argv) != 2:
     print("Invalid arguments.....!")
     print("Usage: <cmd> <filename>")
     sys.exit(1)
 
-data_file=sys.argv[1]
-data_dict=defaultdict(list)
-
+data_file = sys.argv[1]
+data_dict = defaultdict(list)
 
 input_file=open(data_file, 'r')
 
-
-time=""
-prefix1=None
+time = ""
+prefix1 = None
 for line in input_file:
 
     prefix2=None
