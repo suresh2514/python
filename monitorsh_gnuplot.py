@@ -24,14 +24,14 @@ for line in input_file:
     timestamp=re.compile('^===== ....-..-.. (..:..:..).*=====')
     result = re.search(timestamp, line)
     if result:
-        time=result.group(1)
-        data_dict[time]={}
+        time = result.group(1)
+        data_dict[time] = {}
         continue
 
-    mykey=re.compile('ICMP input histogram:')
-    result=mykey.search(line)
+    mykey = re.compile('ICMP input histogram:')
+    result = mykey.search(line)
     if result:
-        prefix1=line
+        prefix1 = line
         continue
 
     mykey=re.compile('ICMP output histogram:')
